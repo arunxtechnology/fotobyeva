@@ -4,8 +4,8 @@ export const CONTACT_INFO = {
         link: "tel:+17573408939",
     },
     email: {
-        display: "eva@fotobyeva.com",
-        link: "mailto:eva@fotobyeva.com",
+        display: "fotobyeva@gmail.com",
+        link: "mailto:fotobyeva@gmail.com",
     },
     address: {
         city: "Virginia Beach",
