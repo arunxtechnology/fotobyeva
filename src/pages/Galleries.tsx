@@ -7,10 +7,7 @@ import { Button } from '@/components/ui/button';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const heroMaternity = '/assets/hero-maternity.jpg';
-const galleryNewborn = '/assets/gallery-newborn.jpg';
-const galleryFamily = '/assets/gallery-family.jpg';
-const galleryWomen = '/assets/gallery-women.jpg';
+import { ALL_IMAGES } from '@/config/images';
 
 const categories = [
   { id: 'all', name: 'All' },
@@ -21,17 +18,15 @@ const categories = [
   { id: 'headshots', name: 'Headshots' },
 ];
 
-import { ALL_IMAGES } from '@/config/images';
-
 const existingImages = [
-  { id: 1, src: heroMaternity, category: 'maternity', title: 'Expecting Grace' },
-  { id: 2, src: galleryNewborn, category: 'newborns', title: 'First Days' },
-  { id: 3, src: galleryFamily, category: 'families', title: 'Family Bond' },
-  { id: 4, src: galleryWomen, category: 'women', title: 'Confident Beauty' },
-  { id: 5, src: heroMaternity, category: 'maternity', title: 'Motherhood Glow' },
-  { id: 6, src: galleryNewborn, category: 'newborns', title: 'Peaceful Sleep' },
-  { id: 7, src: galleryFamily, category: 'families', title: 'Generations' },
-  { id: 8, src: galleryWomen, category: 'headshots', title: 'Professional Portrait' },
+  { id: 1, src: "/assets/evaimages/carousel-family-feet.png", category: 'maternity', title: 'Expecting Grace' },
+  { id: 2, src: "/assets/evaimages/carousel-kids-portrait.jpg", category: 'newborns', title: 'First Days' },
+  { id: 3, src: "/assets/evaimages/carousel-family-portrait.jpg", category: 'families', title: 'Family Bond' },
+  { id: 4, src: "/assets/gallery-women.jpg", category: 'women', title: 'Confident Beauty' },
+  { id: 5, src: "/assets/evaimages/carousel-family-feet.png", category: 'maternity', title: 'Motherhood Glow' },
+  { id: 6, src: "/assets/evaimages/carousel-kids-portrait.jpg", category: 'newborns', title: 'Peaceful Sleep' },
+  { id: 7, src: "/assets/evaimages/carousel-family-portrait.jpg", category: 'families', title: 'Generations' },
+  { id: 8, src: "/assets/gallery-women.jpg", category: 'headshots', title: 'Professional Portrait' },
 ];
 
 const newImages = ALL_IMAGES.filter(img => img !== "eva-portrait.png").map((filename, index) => {
@@ -81,7 +76,7 @@ const Galleries = () => {
       {/* Category Filter */}
       <section className="py-8 bg-background border-b border-border sticky top-20 z-30">
         <div className="container-elegant">
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-3">
             {categories.map((category) => (
               <button
                 key={category.id}

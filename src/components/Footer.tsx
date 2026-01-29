@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com"
+                href={CONTACT_INFO.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-primary transition-colors duration-300"
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href={CONTACT_INFO.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-ivory/10 flex items-center justify-center hover:bg-primary transition-colors duration-300"

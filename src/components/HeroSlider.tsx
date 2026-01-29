@@ -4,27 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const heroMaternity = '/assets/hero-maternity.jpg';
-const galleryNewborn = '/assets/gallery-newborn.jpg';
-const galleryFamily = '/assets/gallery-family.jpg';
+import { HERO_SLIDES } from '@/config/images';
 
-const slides = [
-  {
-    image: heroMaternity,
-    title: 'Capturing Life\'s Most Beautiful Moments',
-    subtitle: 'Timeless portraits that tell your story',
-  },
-  {
-    image: galleryNewborn,
-    title: 'Precious First Days',
-    subtitle: 'Gentle, artistic newborn photography',
-  },
-  {
-    image: galleryFamily,
-    title: 'Family Connections',
-    subtitle: 'Creating heirlooms for generations',
-  },
-];
+const slides = HERO_SLIDES;
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -40,7 +22,7 @@ const HeroSlider = () => {
   const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
-    <section className="relative h-screen min-h-[600px] overflow-hidden">
+    <section className="relative h-screen min-h-[100dvh] overflow-hidden">
       {/* Background Slides */}
       <AnimatePresence mode="wait">
         <motion.div
@@ -70,9 +52,9 @@ const HeroSlider = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="max-w-4xl mx-auto"
+              className="max-w-4xl mx-auto px-4"
             >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-ivory mb-6 leading-tight">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-ivory mb-6 leading-tight">
                 {slides[currentSlide].title}
               </h1>
               <p className="text-lg md:text-xl text-ivory/90 mb-10 font-light">

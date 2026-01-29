@@ -1,4 +1,7 @@
 export const ALL_IMAGES = [
+    "carousel-family-portrait.jpg",
+    "carousel-kids-portrait.jpg",
+    "carousel-family-feet.png",
     "120447012_10158502072120993_8669977930401060925_n.jpg",
     "120573766_10158499386970993_7387533479199130241_n.jpg",
     "120656706_10158502067735993_2803591623924038754_n.jpg",
@@ -63,17 +66,17 @@ export const ALL_IMAGES = [
 
 export const HERO_SLIDES = [
     {
-        image: "/assets/eva-portrait.png",
+        image: "/assets/evaimages/carousel-family-portrait.jpg",
         title: "Capturing Life's Most Beautiful Moments",
         subtitle: "Timeless portraits that tell your story",
     },
     {
-        image: "/assets/evaimages/504729483_10162798942215993_2940543171138411526_n.jpg",
+        image: "/assets/evaimages/carousel-kids-portrait.jpg",
         title: "Precious First Days",
-        subtitle: "Gentle, artistic newborn photography",
+        subtitle: "Gentle, artistic children and family photography",
     },
     {
-        image: "/assets/evaimages/503905265_10162786558630993_6087355322561319699_n.jpg",
+        image: "/assets/evaimages/carousel-family-feet.png",
         title: "Family Connections",
         subtitle: "Creating heirlooms for generations",
     },
@@ -83,25 +86,25 @@ export const FEATURED_GALLERIES = [
     {
         title: "Maternity",
         description: "Celebrate the beauty of motherhood",
-        image: "/assets/evaimages/495381965_10162687937650993_8683547255830369108_n.jpg",
-        href: "/galleries/maternity",
+        image: "/assets/evaimages/carousel-family-feet.png",
+        href: "/galleries",
     },
     {
         title: "Newborns",
         description: "Precious first moments, captured forever",
-        image: "/assets/evaimages/494079943_10162633437820993_8340270894986590867_n.jpg",
-        href: "/galleries/newborns",
+        image: "/assets/evaimages/carousel-kids-portrait.jpg",
+        href: "/galleries",
     },
     {
         title: "Families",
         description: "Connections that last generations",
-        image: "/assets/evaimages/494037658_10162633438195993_6767013066873924277_n.jpg",
-        href: "/galleries/families",
+        image: "/assets/evaimages/carousel-family-portrait.jpg",
+        href: "/galleries",
     },
     {
         title: "Women",
         description: "Empowering portraits of beauty",
         image: "/assets/evaimages/493731014_1226452372822672_4121544614686935437_n.jpg",
-        href: "/galleries/women",
+        href: "/galleries",
     },
 ];

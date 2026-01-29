@@ -1,37 +1,9 @@
 import { Link } from 'react-router-dom';
 import FadeInSection from './FadeInSection';
 
-const galleryNewborn = '/assets/gallery-newborn.jpg';
-const galleryFamily = '/assets/gallery-family.jpg';
-const galleryWomen = '/assets/gallery-women.jpg';
-const heroMaternity = '/assets/hero-maternity.jpg';
+import { FEATURED_GALLERIES } from '@/config/images';
 
-const galleries = [
-  {
-    title: 'Maternity',
-    description: 'Celebrate the beauty of motherhood',
-    image: heroMaternity,
-    href: '/galleries',
-  },
-  {
-    title: 'Newborns',
-    description: 'Precious first moments, captured forever',
-    image: galleryNewborn,
-    href: '/galleries',
-  },
-  {
-    title: 'Families',
-    description: 'Connections that last generations',
-    image: galleryFamily,
-    href: '/galleries',
-  },
-  {
-    title: 'Women',
-    description: 'Empowering portraits of beauty',
-    image: galleryWomen,
-    href: '/galleries',
-  },
-];
+const galleries = FEATURED_GALLERIES;
 
 const FeaturedGalleries = () => {
   return (
