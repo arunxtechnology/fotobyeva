@@ -121,8 +121,7 @@ const Galleries = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="text-ivory font-serif text-xl">{image.title}</h3>
-                        <p className="text-ivory/70 text-sm capitalize">{image.category}</p>
+                        {/* Title and subtitle removed as requested */}
                       </div>
                     </div>
                   </button>

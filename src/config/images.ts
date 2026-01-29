@@ -77,15 +77,15 @@ export const HERO_SLIDES = [
     },
     {
         image: "/assets/evaimages/carousel-family-feet.png",
-        title: "Family Connections",
-        subtitle: "Creating heirlooms for generations",
+        title: "Unconditional Love",
+        subtitle: "Celebrating every family member",
     },
 ];
 
 export const FEATURED_GALLERIES = [
     {
-        title: "Maternity",
-        description: "Celebrate the beauty of motherhood",
+        title: "Pets & Family",
+        description: "Unconditional love in every frame",
         image: "/assets/evaimages/carousel-family-feet.png",
         href: "/galleries",
     },

@@ -104,20 +104,7 @@ const HeroSlider = () => {
         ))}
       </div>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-12 left-1/2 -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 1.5, repeat: Infinity }}
-      >
-        <div className="w-6 h-10 rounded-full border-2 border-ivory/30 flex items-start justify-center p-1">
-          <motion.div
-            className="w-1.5 h-1.5 bg-ivory/60 rounded-full"
-            animate={{ y: [0, 16, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          />
-        </div>
-      </motion.div>
+
     </section>
   );
 };
